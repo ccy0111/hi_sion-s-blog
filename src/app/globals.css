@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -17,6 +17,8 @@
     #0071ff33 160deg,
     transparent 360deg
   );
+
+  
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
@@ -104,4 +106,59 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* default fonts (Fira Code) */
+/* Check License */
+@import url(../../public/fonts/Fira_Code_v6-2/fira_code.css);
+
+/* Color Theme */
+
+/*
+pri col : #FFFFFF ->#FDF9F5 ->#FAE3E5 ->#F8CDD5 ->#F6B7C5 ->#F4A1B5 ->
+#F26B8D ->#D45977 ->#AD4A63 ->#873B4F ->#602C3B ->#3A1D27 ->#140E13 
+
+
+            light theme     dark theme 
+bg        : #F4F4F4         #444444 
+text      : #333333         #FFFFFF 
+sub text  : #666666         #B7B7B7 
+href      : #1A73E8         #8BB8F4 
+button    : #F4A1B5         #F8CDD5 
+hover     : #D45977         #F26B8D
+frame     : #CCCCCC         #6A6A6A
+*/
+
+
+/* light theme */
+:root[color-theme='light'] {
+  --background-color: #F4F4F4;
+  --font-color: #333333;
+  --sub-font-color: #666666;
+  --link-color: #1A73E8;
+  --button-color: #D45977;
+  --button-hover-color: #D45977;
+  --frame-line-color: #CCCCCC;
+  --undefined-color: #333333;
+}
+/* dark theme */
+:root[color-theme="dark"] {
+  --background-color: #444444;
+  --font-color: #FFFFFF;
+  --sub-font-color: #B7B7B7;
+  --link-color: #8BB8F4;
+  --button-color: #F4A1B5;
+  --button-hover-color: #F26B8D;
+  --frame-line-color: #6A6A6A;
+  --undefined-color: #ffffff;
+}
+
+html {
+  background: var(--background-color);
+  color: var(--font-color);
+}
+
+/* Font theme */
+html {
+  font-family:  'Fira Code';
 }
