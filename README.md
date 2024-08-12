@@ -1,4 +1,7 @@
-<div style="font-family: 'Fira Code';"> 
+<div style="
+font-family: 'Fira Code';
+src: url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+"> 
 
 # hi_sion's blog 1.0V
 ---
